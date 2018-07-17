@@ -13,7 +13,7 @@
 <body>
 
     <div class="dateselector">
-        <label for="Select date">Select date:</label>
+        <label for="selectdate">Select date:</label>
         <input type="date" value="" />
     </div>
 
@@ -23,10 +23,14 @@
 
     <div class="buttonselection">
         <form action="">
-            <input type="radio" name="category" value="Focus"> Focus
-            <input type="radio" name="category" value="Fit in"> Fit In
-            <input type="radio" name="category" value="Revive"> Revive
-            <input type="radio" name="category" value="Goals"> Goals
+            <input type="radio" name="category" value="Focus">
+            <label for="selectfocus">Focus</label>
+            <input type="radio" name="category" value="Fit in">
+            <label for="selectfitin">Fit In</label>
+            <input type="radio" name="category" value="Revive">
+            <label for="selectrevive">Revive</label>
+            <input type="radio" name="category" value="Goals">
+            <label for="selectgoals">Goals</label>
         </form>
     </div>
 
@@ -39,28 +43,56 @@
 
     <div class="maintodo">
         <section>
-            <ul>
-                <li>
-                    <p>Focus</p>
-                    Design UI Todo list
-                    <input type="button" value="X">
-                </li>
-                <li>
-                    <p>Goals</p>
-                    Best UI of the year
-                    <input type="button" value="X">
-                </li>
-                <li>
-                    <p>Revive</p>
-                    JavaScript and DOM review
-                    <input type="button" value="X">
-                </li>
-                <li>
-                    <p>Fit In</p>
-                    Yoga Exercise
-                    <input type="button" value="X">
-                </li>
-            </ul>
+            <div>
+                <div>
+                    <div>
+                        <p class="tagfocus">Focus</p>
+                    </div>
+                    <div>
+                        <p>Design UI Todo list</p>
+                    </div>
+                    <div>
+                        <input type="button" value="X">
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <p class="taggoals">Goals</p>
+                    </div>
+                    <div>
+                        <p>Best UI of the year</p>
+                    </div>
+                    <div>
+                        <input type="button" value="X">
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <p class="tagrevive">Revive</p>
+                    </div>
+                    <div>
+                        <p>JavaScript and DOM review</p>
+                    </div>
+                    <div>
+                        <input type="button" value="X">
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <p class="tagfitin">Fit In</p>
+                    </div>
+                    <div>
+                        <p> Exercise </p>
+                    </div>
+                    <div>
+                        <input type="button" value="X">
+                    </div>
+                </div>
+
+            </div>
         </section>
     </div>
 
