@@ -29,4 +29,6 @@ Sort yout priority into four main category and maintain your schedule by added a
 ---
 
 Install your Priorito today :
-![Playstore](playstore.png) ![Appstore](appstore.png)# todo-glints
+
+
+![Playstore](playstore.png) ![Appstore](appstore.png)
