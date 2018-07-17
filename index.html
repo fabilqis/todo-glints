@@ -12,90 +12,99 @@
 
 <body>
 
-    <div class="dateselector">
+    <div class="dateselector d-flex justify-content-center">
         <label for="selectdate">Select date:</label>
         <input type="date" value="" />
     </div>
 
-    <div class="question">
+    <div class="question d-flex justify-content-center">
         <h1> What is your To do, Today?</h1>
     </div>
 
     <div class="buttonselection">
-        <form action="">
-            <input type="radio" name="category" value="Focus">
-            <label for="selectfocus">Focus</label>
-            <input type="radio" name="category" value="Fit in">
-            <label for="selectfitin">Fit In</label>
-            <input type="radio" name="category" value="Revive">
-            <label for="selectrevive">Revive</label>
-            <input type="radio" name="category" value="Goals">
-            <label for="selectgoals">Goals</label>
-        </form>
+        <div class="container">
+            <div class="row">
+                <form action="" class="col">
+                    <input type="radio" name="category" value="Focus">
+                    <label for="selectfocus">Focus</label>
+                </form>
+                <form action="" class="col">
+                    <input type="radio" name="category" value="Fit in">
+                    <label for="selectfitin">Fit In</label>
+                </form>
+                <form action="" class="col">
+                    <input type="radio" name="category" value="Revive">
+                    <label for="selectrevive">Revive</label>
+                </form>
+                <form action="" class="col">
+                    <input type="radio" name="category" value="Goals">
+                    <label for="selectgoals">Goals</label>
+                </form>
+            </div>
+        </div>
     </div>
 
-    <div class="typeform">
-        <form action="">
-            <input type="text" name="todo" placeholder="Type here..">
-            <input type="button" name="add" value="+">
-        </form>
-    </div>
+    <div class="mainlist">
+        <div class="typeform d-flex justify-content-center">
+            <form action="">
+                <input type="text" name="todo" placeholder="Type here..">
+                <input type="button" name="add" value="+">
+            </form>
+        </div>
 
-    <div class="maintodo">
-        <section>
-            <div>
-                <div>
-                    <div>
+        <div class="maintodo">
+            <div class=" container justify-content-center">
+                <div class="d-flex flex-row innerfocus">
+                    <div class="p-2">
                         <p class="tagfocus">Focus</p>
                     </div>
-                    <div>
+                    <div class="p-2">
                         <p>Design UI Todo list</p>
                     </div>
-                    <div>
+                    <div class="p-2">
                         <input type="button" value="X">
                     </div>
                 </div>
 
-                <div>
-                    <div>
+                <div class="d-flex flex-row innergoals">
+                    <div class="p-2">
                         <p class="taggoals">Goals</p>
                     </div>
-                    <div>
+                    <div class="p-2">
                         <p>Best UI of the year</p>
                     </div>
-                    <div>
+                    <div class="p-2">
                         <input type="button" value="X">
                     </div>
                 </div>
 
-                <div>
-                    <div>
+                <div class="d-flex flex-row innerrevive">
+                    <div class="p-2">
                         <p class="tagrevive">Revive</p>
                     </div>
-                    <div>
+                    <div class="p-2">
                         <p>JavaScript and DOM review</p>
                     </div>
-                    <div>
+                    <div class="p-2">
                         <input type="button" value="X">
                     </div>
                 </div>
 
-                <div>
-                    <div>
-                        <p class="tagfitin">Fit In</p>
-                    </div>
-                    <div>
-                        <p> Exercise </p>
-                    </div>
-                    <div>
-                        <input type="button" value="X">
-                    </div>
+                <div class="d-flex flex-row innerfitin">
+                        <div class="p-2">
+                            <p class="tagfitin">Fit In</p>
+                        </div>
+                        <div class="p-2">
+                            <p> Exercise </p>
+                        </div>
+                        <div class="p-2">
+                            <input type="button" value="X">
+                        </div>
                 </div>
 
             </div>
-        </section>
+        </div>
     </div>
-
 </body>
 
 </html>

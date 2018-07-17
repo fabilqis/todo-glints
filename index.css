@@ -1,0 +1,53 @@
+.dateselector{
+ background-image: url("bg1.png");
+ text-align: center;
+}
+
+.mainlist{
+    background-image: url("bg2.png");
+    object-fit: fill;
+}
+.question{
+    padding: 30px;
+}
+
+.buttonselection{
+    padding: 30px;
+    text-align: center;
+}
+
+.mainlist{
+    padding-top: 30px;
+}
+
+.tagfocus{
+    text-align: center;
+    background: #EB5B5B;
+    padding: 10px; 
+    width: 100px;
+    height: 50px; 
+}
+
+.tagfitin{
+    text-align: center;
+    background: #E5E944;
+    padding: 10px; 
+    width: 100px;
+    height: 50px; 
+}
+
+.tagrevive{
+    text-align: center;
+    background: #9BEB5B;
+    padding: 10px; 
+    width: 100px;
+    height: 50px; 
+}
+
+.taggoals{
+    text-align: center;
+    background: #5BEBC8;
+    padding: 10px; 
+    width: 100px;
+    height: 50px; 
+}
