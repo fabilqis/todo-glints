@@ -1,23 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     <title>Priorito</title>
 </head>
+
 <body>
-    <div>
+
+    <div class="dateselector">
+        <label for="Select date">Select date:</label>
+        <input type="date" value="" />
+    </div>
+
+    <div class="question">
         <h1> What is your To do, Today?</h1>
     </div>
 
-    <div>
+    <div class="buttonselection">
         <form action="">
-            <input type="radio" name="category" value="Focus" placeholder="Focus">
-
+            <input type="radio" name="category" value="Focus"> Focus
+            <input type="radio" name="category" value="Fit in"> Fit In
+            <input type="radio" name="category" value="Revive"> Revive
+            <input type="radio" name="category" value="Goals"> Goals
         </form>
     </div>
 
+    <div class="typeform">
+        <form action="">
+            <input type="text" name="todo" placeholder="Type here..">
+            <input type="button" name="add" value="+">
+        </form>
+    </div>
+
+    <div class="maintodo">
+        <section>
+            <ul>
+                <li>
+                    <p>Focus</p>
+                    Design UI Todo list
+                    <input type="button" value="X">
+                </li>
+                <li>
+                    <p>Goals</p>
+                    Best UI of the year
+                    <input type="button" value="X">
+                </li>
+                <li>
+                    <p>Revive</p>
+                    JavaScript and DOM review
+                    <input type="button" value="X">
+                </li>
+                <li>
+                    <p>Fit In</p>
+                    Yoga Exercise
+                    <input type="button" value="X">
+                </li>
+            </ul>
+        </section>
+    </div>
+
 </body>
+
 </html>
