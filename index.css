@@ -11,7 +11,6 @@
 .mainlist{
     background-image: url("bg2.png");
     object-fit: fill;
-    float: center;
 }
 
 .question{
