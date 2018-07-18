@@ -2,19 +2,37 @@
 <html lang="en">
 
 <head>
+    <title>Priorito</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="index.css">
-    <title>Priorito</title>
+    <link rel="stylesheet" href="index.js">
+    <script type='text/javascript' src='//code.jquery.com/jquery-1.8.3.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker3.min.css">
+    <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.min.js"></script>
+    <script type='text/javascript'>
+        $(function () {
+            $('.input-group.date').datepicker({
+                calendarWeeks: true,
+                todayHighlight: true,
+                autoclose: true
+            });
+        });
+    </script>
+
 </head>
 
 <body>
-
-    <div class="dateselector d-flex justify-content-center">
-        <label for="selectdate">Select date:</label>
-        <input type="date" value="" />
+    <div class="container dateselector"> 
+        <div class="input-group date justify-content-center">
+            <h1 class="textdate">Select Date: <br></h1>
+            <input type="text" class="form-control col-8">
+            <span class="input-group-addon">
+                <i class="glyphicon glyphicon-calendar"></i>
+            </span>
+        </div>
     </div>
 
     <div class="question d-flex justify-content-center">
@@ -24,19 +42,19 @@
     <div class="buttonselection">
         <div class="container">
             <div class="row">
-                <form action="" class="col">
+                <form class="col">
                     <input type="radio" name="category" value="Focus">
                     <label for="selectfocus">Focus</label>
                 </form>
-                <form action="" class="col">
+                <form class="col">
                     <input type="radio" name="category" value="Fit in">
                     <label for="selectfitin">Fit In</label>
                 </form>
-                <form action="" class="col">
+                <form class="col">
                     <input type="radio" name="category" value="Revive">
                     <label for="selectrevive">Revive</label>
                 </form>
-                <form action="" class="col">
+                <form class="col">
                     <input type="radio" name="category" value="Goals">
                     <label for="selectgoals">Goals</label>
                 </form>
@@ -45,66 +63,72 @@
     </div>
 
     <div class="mainlist">
-        <div class="typeform d-flex justify-content-center">
-            <form action="">
-                <input type="text" name="todo" placeholder="Type here..">
-                <input type="button" name="add" value="+">
-            </form>
+        <div class="filltext container ">
+            <div class="d-flex form-row">
+                <div class="col-11">
+                    <input type="text" class="form-control" placeholder="Type here...">
+                </div>
+                <div class="col">
+                    <button type="submit" class="btn btn-primary mb-2"> + </button>
+                </div>
+            </div>
         </div>
 
         <div class="maintodo">
-            <div class=" container justify-content-center">
-                <div class="d-flex flex-row innerfocus">
+            <div class=" container ">
+                <div class="d-flex flex-row ">
                     <div class="p-2">
                         <p class="tagfocus">Focus</p>
                     </div>
                     <div class="p-2">
-                        <p>Design UI Todo list</p>
+                        <p class="innerfocus">Design UI Todo list</p>
                     </div>
                     <div class="p-2">
-                        <input type="button" value="X">
+                            <button type="submit" class="btn btn-danger mb-5"> X </button>
                     </div>
                 </div>
 
-                <div class="d-flex flex-row innergoals">
+                <div class="d-flex flex-row ">
                     <div class="p-2">
                         <p class="taggoals">Goals</p>
                     </div>
                     <div class="p-2">
-                        <p>Best UI of the year</p>
+                        <p class="innergoals">Best UI of the year</p>
                     </div>
                     <div class="p-2">
-                        <input type="button" value="X">
+                            <button type="submit" class="btn btn-danger mb-5"> X </button>
                     </div>
                 </div>
 
-                <div class="d-flex flex-row innerrevive">
+                <div class="d-flex flex-row ">
                     <div class="p-2">
                         <p class="tagrevive">Revive</p>
                     </div>
                     <div class="p-2">
-                        <p>JavaScript and DOM review</p>
+                        <p class="innerrevive">JavaScript and DOM review</p>
                     </div>
                     <div class="p-2">
-                        <input type="button" value="X">
+                            <button type="submit" class="btn btn-danger mb-5"> X </button>
                     </div>
                 </div>
 
-                <div class="d-flex flex-row innerfitin">
-                        <div class="p-2">
-                            <p class="tagfitin">Fit In</p>
-                        </div>
-                        <div class="p-2">
-                            <p> Exercise </p>
-                        </div>
-                        <div class="p-2">
-                            <input type="button" value="X">
-                        </div>
+                <div class="d-flex flex-row">
+                    <div class="p-2">
+                        <p class="tagfitin">Fit In</p>
+                    </div>
+                    <div class="p-2">
+                        <p class="innerfitin"> Exercise </p>
+                    </div>
+                    <div class="p-2">
+                        <button type="submit" class="btn btn-danger mb-4"> X </button>
+                    </div>
                 </div>
 
             </div>
         </div>
     </div>
+
+
 </body>
 
 </html>

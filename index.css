@@ -1,29 +1,36 @@
+.textdate{
+    font-size: 20px;
+}
+
 .dateselector{
  background-image: url("bg1.png");
- text-align: center;
+ object-fit: cover;
+ padding: 20px;
 }
 
 .mainlist{
     background-image: url("bg2.png");
     object-fit: fill;
+    float: center;
 }
+
 .question{
     padding: 30px;
 }
 
 .buttonselection{
-    padding: 30px;
+    padding: 10px;
     text-align: center;
 }
 
-.mainlist{
-    padding-top: 30px;
+.filltext{
+    padding: 40px;
 }
 
 .tagfocus{
     text-align: center;
     background: #EB5B5B;
-    padding: 10px; 
+    padding: 15px; 
     width: 100px;
     height: 50px; 
 }
@@ -31,7 +38,7 @@
 .tagfitin{
     text-align: center;
     background: #E5E944;
-    padding: 10px; 
+    padding: 15px; 
     width: 100px;
     height: 50px; 
 }
@@ -39,7 +46,7 @@
 .tagrevive{
     text-align: center;
     background: #9BEB5B;
-    padding: 10px; 
+    padding: 15px; 
     width: 100px;
     height: 50px; 
 }
@@ -47,7 +54,35 @@
 .taggoals{
     text-align: center;
     background: #5BEBC8;
-    padding: 10px; 
+    padding: 15px; 
     width: 100px;
     height: 50px; 
+}
+
+.innerfocus{
+    background: #ffffff;
+    padding: 15px; 
+    width: 800px;
+    height: 50px;  
+}
+
+.innerrevive{
+    background: #ffffff;
+    padding: 15px; 
+    width: 800px;
+    height: 50px;  
+}
+
+.innergoals{
+    background: #ffffff;
+    padding: 15px; 
+    width: 800px;
+    height: 50px;  
+}
+
+.innerfitin{
+    background: #ffffff;
+    padding: 15px;
+    width: 800px;
+    height: 50px;  
 }
